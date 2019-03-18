@@ -1,0 +1,73 @@
+.main_header {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  clip-path: polygon(
+    0 19%,
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 81%,
+    25% 81%,
+    25% 19%
+  );
+}
+.main_header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top right,
+    rgba(240, 5, 150, 0.575),
+    rgba(0, 38, 255, 0.596)
+  );
+}
+.video {
+  position: absolute;
+  width: 100%;
+}
+.identity_photo {
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  width: 23%;
+  height: 30%;
+  background-image: url("../images/favicon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  cursor: pointer;
+}
+.identity_photo::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  background-image: url("../images/favicon.png");
+  filter: grayscale(85%); // je peux aussi rajouter un blur() plus tard
+  background-size: cover; /* border-radius: 30px; */
+}
+.identity_photo::after {
+  right: 0;
+  transform-origin: right;
+  transform: perspective(1500px) rotate(0deg);
+  background-position: bottom;
+}
+.identity_photo:hover::after {
+  transform: perspective(1500px) rotateY(270deg);
+}
+#header__myName {
+  position: absolute;
+  top: 12%;
+  left: 30%;
+  width: 60%;
+  height: 30%;
+  color: rgba(233, 88, 4, 0.897);
+  font-family: "Mali", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1000px;
+}

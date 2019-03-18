@@ -1,0 +1,218 @@
+/*
+font use for SUMMER : font-family: 'Monoton', cursive;
+font-family: 'Love Ya Like A Sister', cursive;
+
+font use for see more : font-family: 'Monoton', cursive;
+font-family: 'Love Ya Like A Sister', cursive;
+font-family: 'Vollkorn SC', serif;
+font-family: 'Nova Flat', cursive;
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fce6aa;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main_white{
+    background: white;
+    position: absolute;
+    top: 20.5em;
+    left: 42.5em;
+    transform: translate(-50%,-50%);
+    width:1200px;
+    height:80vh;
+    box-shadow: 0px 3px 20px rgba(255, 255, 255, 0.507);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main_white:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.507);
+}
+
+.main_white .image_border{
+    width: 34.3em;
+    height: 100%;
+    position:absolute;
+    top: 50%;
+    left: 52.5%;
+    transform: translate(-50%,-50%);
+    background-image: url(IMAGES/minimalistik1.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+
+
+.main_white .left_box{
+    background-color:#fdf5de;
+    width: 22.5em;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+.main_white .right_box{
+    background-color:#fdf5de;
+    width: 18.5em;
+    height: 30.8em;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 43.9%;
+    right:-12.4%;
+}
+
+.main_white .right_box p:nth-child(1){
+    position: absolute;
+    opacity: 0.6;
+    top: 5em;
+    left: 1em;
+    font-family: 'Federo', sans-serif;; 
+    font-size: 3em;
+    
+}
+
+.main_white .right_box p:nth-child(2){
+    position: absolute;
+    top: 19.6em;
+    left: 3.2em;
+    font-family:'Vollkorn SC', serif;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .main_white p:nth-child(1){
+      position: absolute;
+      top: 28rem;
+      left: 1.5rem;
+  }
+  .main_white p:nth-child(2){
+    position: absolute;
+    top: 28rem;
+    right: 4rem;
+}
+
+.left_box span{
+    position:absolute;
+    top: 28rem;
+    left: 10%;
+}
+
+.left_box p:nth-child(1){
+    transform: translate(0%,-280%);
+    font-size: 5.5rem;
+    font-family: 'Jockey One', sans-serif;
+}
+.left_box p:nth-child(2){
+    transform: translate(-100%,-220%);
+    font-size: 5.5rem;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.blocks{
+    position: absolute;
+    top: 18rem;
+    left: 7.5%;
+}
+
+.left_box .small_block1{
+    opacity:0.8;
+    width: 4rem;
+    height:0.2rem;
+    background-color: black;
+}
+.left_box .small_block1::after{
+    position: absolute;
+    content:'01';
+    left: 115%;
+    top: -12%;    
+}
+.left_box .small_block2{
+    opacity:0.5;
+    width: 1.8rem;
+    height:0.1rem;
+    background-color: black;
+}
+.left_box .small_block3{
+    opacity:0.5;
+    width: 1.8rem;
+    height:0.1rem;
+    background-color: black;
+}
+.left_box .small_block4{
+    opacity:0.5;
+    width: 1.8rem;
+    height:0.1rem;
+    background-color: black;
+}
+
+.left_box .small_block01{
+    opacity: 0.8;
+    margin-top: 0.2rem;
+    width: 0.7rem;
+    height:0.2rem;
+    background-color: black;
+}
+
+.left_box .small_block02{
+    opacity: 0.8;
+    margin-top: 0.2rem;
+    width: 1.5rem;
+    height:0.2rem;
+    background-color: black;
+}
+.left_box .small_block03{
+    opacity: 0.8;
+    margin-top: 0.2rem;
+    width: 1.2rem;
+    height:0.2rem;
+    background-color: black;
+}
+
+.blocks1{
+    position: absolute;
+    top: 0.7rem;
+    left: 7%; 
+}
+
+.main_white .right_box p:nth-child(3){
+    position: absolute;
+    top: 31.9rem;
+    left:2rem;   
+    font-family: 'Federo', sans-serif;; 
+}
+.main_white .right_box p:nth-child(3) span{
+    position: absolute;
+    right:-130%;
+    font-family: 'Federo', sans-serif;; 
+}
+
+@media (max-width: 768px){
+    .main_white{
+        width:800px;
+        height:50vh;
+        left: 22em;
+    }
+}
+
+/*background: white;
+    position: absolute;
+    top: 20.5em;
+    left: 42.5em;
+    transform: translate(-50%,-50%);
+    width:1200px;
+    height:80vh;
+    box-shadow: 0px 3px 20px rgba(255, 255, 255, 0.507);
+    box-sizing: border-box;
+    overflow: hidden;*/

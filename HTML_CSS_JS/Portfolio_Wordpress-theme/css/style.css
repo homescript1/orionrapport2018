@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100vh;
+  overflow: hidden; }
+
+.main_header {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  clip-path: polygon(0 19%, 0 0, 100% 0, 100% 100%, 0 100%, 0 81%, 25% 81%, 25% 19%); }
+
+.main_header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top right, rgba(240, 5, 150, 0.575), rgba(0, 38, 255, 0.596)); }
+
+.video {
+  position: absolute;
+  width: 100%; }
+
+.identity_photo {
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  width: 23%;
+  height: 30%;
+  background-image: url("../images/favicon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  cursor: pointer; }
+
+.identity_photo::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  background-image: url("../images/favicon.png");
+  filter: grayscale(85%);
+  background-size: cover;
+  /* border-radius: 30px; */ }
+
+.identity_photo::after {
+  right: 0;
+  transform-origin: right;
+  transform: perspective(1500px) rotate(0deg);
+  background-position: bottom; }
+
+.identity_photo:hover::after {
+  transform: perspective(1500px) rotateY(270deg); }
+
+#header__myName {
+  position: absolute;
+  top: 12%;
+  left: 30%;
+  width: 60%;
+  height: 30%;
+  color: rgba(233, 88, 4, 0.897);
+  font-family: "Mali", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1000px; }
+
+.header__aboutMe {
+  position: absolute;
+  top: 29%;
+  left: 38%;
+  font-size: 2rem;
+  font-family: "Mali", cursive;
+  color: yellow; }
+
+h2 {
+  position: absolute;
+  top: 28%;
+  left: 30%;
+  font-size: 2.5rem;
+  font-family: "Mali", cursive;
+  color: white; }
+
+.particleJs__anime {
+  position: absolute;
+  width: 50%;
+  height: 40.1vh;
+  background-image: url(../images/at_wordk/work11.jpg);
+  background-size: cover;
+  bottom: 0;
+  left: 0; }
+
+.menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40.1vh;
+  width: 50%;
+  background-image: linear-gradient(to top right, rgba(0, 38, 255, 0.849), rgba(240, 5, 150, 0.863));
+  display: flex;
+  align-items: center; }
+
+.menubtn {
+  margin-left: 18%;
+  position: relative;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-family: "Mali", cursive;
+  transition: box-shadow 0.5s; }
+
+.menubtn::after,
+.menubtn::before {
+  content: "";
+  position: absolute;
+  width: 0.2rem;
+  height: 3.2rem;
+  background-color: #fff; }
+
+.menubtn::after {
+  top: 0;
+  left: 0;
+  transition: all 0.7s; }
+
+.menubtn::before {
+  top: 0;
+  right: 0;
+  transition: all 0.7s; }
+
+.menubtn:hover::before {
+  width: 50%;
+  opacity: 0.2;
+  background-color: red; }
+
+.menubtn:hover::after {
+  width: 50%;
+  opacity: 0.2;
+  background-color: red; }
+
+.menubtn:hover {
+  box-shadow: -4px 8px 2px rgba(0, 0, 0, 0.2);
+  transform: skew(-25deg); }
+
+.menubtn:active {
+  box-shadow: none; }
+
+.menublock {
+  z-index: 55;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40.1vh;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translate3d(400px, 0, 0);
+  transition: all 0.8s;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+ul > li {
+  list-style: none; }
+
+ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Mali", cursive; }
+
+ul > li > a {
+  border-bottom: solid white;
+  border-bottom-style: double;
+  border-bottom-width: 8px;
+  transition: all 0.4s; }
+
+ul > li > a:hover {
+  border-bottom: solid #f5dd0b; }
+
+ul > li:not(:last-child) {
+  margin-bottom: 20%; }
+
+.menuCACHE {
+  transform: translate3d(400px, 0, 0); }
+
+.menublockShow {
+  transform: translate3d(0px, 0, 0); }
+
+.first-main {
+  position: absolute;
+  background-image: url("../images/jordan-whitfield-112404-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  transform-origin: left;
+  transform: perspective(2500px) rotate(0deg); }
+
+.btncosmos {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Mali", cursive;
+  color: white;
+  padding: 20px 20px;
+  background-color: rgba(17, 0, 255, 0.3);
+  border-radius: 100px;
+  transition: all 1s;
+  text-align: center; }
+
+.premiereOuverture {
+  transform: perspective(2500px) rotateY(30deg); }
+
+.deuxiemeOuverture {
+  transform: perspective(2500px) rotateY(80deg); }
+
+@media only screen and (max-width: 784px) {
+  .menublock {
+    width: 50%;
+    transform: translate3d(0px, 0, 0); }
+
+  .menubtn {
+    visibility: hidden; } }
+@media only screen and (max-width: 530px) {
+  .aboutMe {
+    visibility: hidden; } }
+@media only screen and (max-width: 1130px) {
+  .header__aboutMe {
+    left: 40%; } }
+@media only screen and (max-width: 1170px) {
+  .header__aboutMe {
+    left: 40%; } }
+@media only screen and (max-width: 1010px) {
+  .header__aboutMe {
+    left: 42%; } }
+@media only screen and (max-width: 790px) {
+  .header__aboutMe {
+    left: 45%; } }
+@media only screen and (max-width: 642px) {
+  .header__aboutMe {
+    left: 47%; } }
+@media only screen and (max-width: 538px) {
+  .header__aboutMe {
+    left: 49%; } }

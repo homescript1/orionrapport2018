@@ -1,0 +1,53 @@
+// RESPONSIVE OF WELCOME PAGE
+
+@media only screen and (max-width: 784px) {
+  .menublock {
+    width: 50%;
+    transform: translate3d(0px, 0, 0);
+  }
+
+  .menubtn {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .aboutMe {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .header__aboutMe {
+    left: 40%;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .header__aboutMe {
+    left: 40%;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .header__aboutMe {
+    left: 42%;
+  }
+}
+@media only screen and (max-width: 790px) {
+  .header__aboutMe {
+    left: 45%;
+  }
+}
+
+@media only screen and (max-width: 642px) {
+  .header__aboutMe {
+    left: 47%;
+  }
+}
+
+@media only screen and (max-width: 538px) {
+  .header__aboutMe {
+    left: 49%;
+  }
+}

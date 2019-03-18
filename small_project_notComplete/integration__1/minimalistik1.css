@@ -1,0 +1,199 @@
+@font-face{
+    font-family:'bodoni_[fr.allfont.net].ttf';
+    src:url('../fonts/bodoni_[fr.allfont.net].ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #05c3ff;
+}
+
+.main_white .main-image{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 66px;
+    width: 70rem;
+    height: 80vh;
+    background-image:url(IMAGES/minimalistik2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.main_white .main-image h1{
+    position: absolute;
+    font-family: 'Uncial Antiqua', cursive;
+    text-transform: uppercase;
+    color:white;
+    font-size:8rem;
+    left: 25%;
+    top: 32%;
+}
+
+.main_white .main-image p{
+    position: absolute;
+    letter-spacing:10px;
+    color: white;
+    left: 42%;
+    top: 62%;
+    box-shadow: 1px 0px 5px white;
+    cursor: pointer;
+    transition: 0.4s;
+    border:none;
+}
+
+.main_white .main-image p:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 0px;
+}
+
+nav ul{
+    float:right;
+    margin-right: 8rem;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0.7rem;
+}
+
+nav ul li a:link,
+nav ul li a:visited{
+    text-decoration: none;
+    color: white;
+    font-family: 'Iceland', cursive;
+    font-size: 1.2rem;
+}
+
+nav ul li:nth-child(1){
+    padding: 8px 8px;
+    border-radius: 50px;
+    border:3px dotted white;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(1):hover{
+    border:3px solid white;
+}
+
+nav ul .fab{
+    position: absolute;
+    right:20px;
+    top: 20px;
+    font-size: 1.5rem;
+    color:white;
+}
+nav ul .fab:hover{
+    cursor: pointer;
+}
+
+h3{
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-family: 'Iceberg', cursive;
+    color: white;
+    font-size: 1.6rem;
+    opacity:0.7;
+}
+
+.box{
+    position: absolute;
+   width: 27rem;
+    left:0;
+    bottom: 0;
+    max-width:27rem;
+    height:10rem;
+    background:rgba(0, 0, 0, 0.356);
+}
+
+.box::after{
+    position: absolute;
+   content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dignissimos illum beatae deleniti cumque natus.Aut dignissimos illum beatae deleniti cumque natus.';
+   top: 2rem;
+   left: 20px;
+   color: white;
+   text-align: justify;
+}
+
+.box::before{
+    position: absolute;
+    content:'MORE';
+    top: 7rem;
+    left: 20px;
+    color: white;
+}
+.box .ptite_box{
+    position: absolute;
+    background: blue;
+    width: 4rem;
+    height: 0.3rem;
+    top: 7.3rem;
+    left: 6rem;
+}
+.ptite1_box{
+    position: absolute;
+    background: white;
+    width: 10rem;
+    height: 0.2rem;
+    top: 28.3rem;
+    right:13rem;
+    border-radius: 10%;
+    opacity:0.8 ;
+}
+.ptite1_box::after{
+    position: absolute;
+    content: '01';
+    font-size: 1.5rem;
+    top: -0.7rem;
+    right: 11rem;
+    color: white;
+    opacity:0.8 ;
+}
+
+.prevNext{
+    position: absolute;
+    right: 3rem;
+    top: 27rem;
+    font-size: 1rem;
+    color: white;
+    opacity:1;
+}
+
+.prevNext .prev{
+    padding:10px 12px;
+    border:2px solid white;
+    border-radius: 100%;
+}
+
+.prevNext .next{
+    padding:10px 12px;
+    border:2px solid white;
+    border-radius: 100%;
+}
+
+.social_network {
+   position: absolute;
+   right: 0;
+   top: 14rem;
+    color: white;
+}
+
+.social_network .fb{
+    margin: 0.5rem;
+    display: block;
+}
+
+.social_network .insta{
+    margin: 0.5rem;
+    display: block;
+}
+
+.social_network .twi{
+    margin: 0.5rem;
+    display: block;
+}
